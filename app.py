@@ -32,6 +32,5 @@ if image is not None:
 
     # Classify the image
     result = classify_image(cv2_img_rgb)
-    
     # Display the result
     st.write(result)
