@@ -6,7 +6,7 @@ import cv2
 st.header('Flower Classification CNN Model')
 flower_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
-# Load your Keras model
+# 
 model = tf.keras.models.load_model('Flower_Recog_Model.keras')
 
 def classify_image(image):
@@ -22,7 +22,6 @@ def classify_image(image):
 image = st.camera_input("Take a picture")
 
 if image is not None:
-    # Convert the file to an opencv image.
     bytes_data = image.getvalue()
     cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
