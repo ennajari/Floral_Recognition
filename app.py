@@ -27,5 +27,4 @@ if image is not None:
     cv2_img_rgb = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
 
     result = classify_image(cv2_img_rgb)
-    # 
     st.write(result)
