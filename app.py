@@ -24,7 +24,6 @@ if image is not None:
     bytes_data = image.getvalue()
     cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
-    # Convert BGR to RGB
     cv2_img_rgb = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
 
     # Classify the image
