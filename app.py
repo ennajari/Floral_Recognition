@@ -6,7 +6,6 @@ import cv2
 st.header('Flower Classification CNN Model')
 flower_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
-# 
 model = tf.keras.models.load_model('Flower_Recog_Model.keras')
 
 def classify_image(image):
