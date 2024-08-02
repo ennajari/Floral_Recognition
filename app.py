@@ -19,7 +19,6 @@ def classify_image(image):
     outcome = 'The Image belongs to ' + flower_names[np.argmax(result)] + ' with a score of '+ str(np.max(result)*100)
     return outcome
 
-# Streamlit camera input
 image = st.camera_input("Take a picture")
 
 if image is not None:
